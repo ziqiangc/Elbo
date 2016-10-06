@@ -1,8 +1,8 @@
 Package: Elbo
 Title: My first R package
-Version: 0.0.2
-Authors@R: person("Ziqiang", 
-    "Chen", email = "ziqiangc@buffalo.edu", 
+Version: 0.0.3
+Authors@R: person("Ziqiang", "Chen",
+    email = "ziqiangc@buffalo.edu",
     role = c("aut", "cre"))
 Description: Help herd people to start conversations without embarrassing.
 Depends:
