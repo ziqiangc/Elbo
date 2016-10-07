@@ -1,6 +1,6 @@
 #' Help start conversations
 #'
-#' This function generates some helpful text
+#' This function generates some helpful text for causal conversations
 #'
 #' @param who character(1) The name of the person you wish to talk to.
 #'
