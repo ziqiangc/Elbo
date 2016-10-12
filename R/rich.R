@@ -11,6 +11,7 @@
 #' @return A SummarizedExperiment() containing samples as colData(),
 #'      and expression values as assay().
 #'
+#' @importFrom SummarizedExperiment SummarizedExperiment
 #' @export
 #'
 input_rich <- function(pdata_file, exprs_file) {
@@ -19,7 +20,7 @@ input_rich <- function(pdata_file, exprs_file) {
 
     SummarizedExperiment(as.matrix(exprs), colData=pdata)
 
-    ## return a data.frame
+    ## return a SummarizedExperiment object
 }
 
 
