@@ -1,12 +1,17 @@
 Package: Elbo
 Title: My first R package
-Version: 0.2.1
+Version: 0.2.1.1
 Authors@R: person("Ziqiang", "Chen",
     email = "ziqiangc@buffalo.edu",
     role = c("aut", "cre"))
 Description: Help herd people to start conversations without embarrassing.
 Depends:
     R (>= 3.3.1)
+Imports:
+    SummarizedExperiment,
+    dplyr,
+    magrittr,
+    reshape2
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
