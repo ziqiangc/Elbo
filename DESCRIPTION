@@ -1,6 +1,6 @@
 Package: Elbo
 Title: My first R package
-Version: 0.4.0
+Version: 0.4.1
 Authors@R: person("Ziqiang", "Chen",
     email = "ziqiangc@buffalo.edu",
     role = c("aut", "cre"))
