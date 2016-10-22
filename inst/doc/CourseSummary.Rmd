@@ -2,7 +2,7 @@
 title: "Course Summary"
 author: "Ziqiang Chen"
 date: "October 21, 2016"
-output: html_document
+output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Course Summary}
   %\VignetteEngine{knitr::rmarkdown}

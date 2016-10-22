@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="author" content="Ziqiang Chen" />
+
+<meta name="date" content="2016-10-21" />
+
+<title>Course Summary</title>
+
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+
+
+<link href="data:text/css;charset=utf-8,body%20%7B%0Abackground%2Dcolor%3A%20%23fff%3B%0Amargin%3A%201em%20auto%3B%0Amax%2Dwidth%3A%20700px%3B%0Aoverflow%3A%20visible%3B%0Apadding%2Dleft%3A%202em%3B%0Apadding%2Dright%3A%202em%3B%0Afont%2Dfamily%3A%20%22Open%20Sans%22%2C%20%22Helvetica%20Neue%22%2C%20Helvetica%2C%20Arial%2C%20sans%2Dserif%3B%0Afont%2Dsize%3A%2014px%3B%0Aline%2Dheight%3A%201%2E35%3B%0A%7D%0A%23header%20%7B%0Atext%2Dalign%3A%20center%3B%0A%7D%0A%23TOC%20%7B%0Aclear%3A%20both%3B%0Amargin%3A%200%200%2010px%2010px%3B%0Apadding%3A%204px%3B%0Awidth%3A%20400px%3B%0Aborder%3A%201px%20solid%20%23CCCCCC%3B%0Aborder%2Dradius%3A%205px%3B%0Abackground%2Dcolor%3A%20%23f6f6f6%3B%0Afont%2Dsize%3A%2013px%3B%0Aline%2Dheight%3A%201%2E3%3B%0A%7D%0A%23TOC%20%2Etoctitle%20%7B%0Afont%2Dweight%3A%20bold%3B%0Afont%2Dsize%3A%2015px%3B%0Amargin%2Dleft%3A%205px%3B%0A%7D%0A%23TOC%20ul%20%7B%0Apadding%2Dleft%3A%2040px%3B%0Amargin%2Dleft%3A%20%2D1%2E5em%3B%0Amargin%2Dtop%3A%205px%3B%0Amargin%2Dbottom%3A%205px%3B%0A%7D%0A%23TOC%20ul%20ul%20%7B%0Amargin%2Dleft%3A%20%2D2em%3B%0A%7D%0A%23TOC%20li%20%7B%0Aline%2Dheight%3A%2016px%3B%0A%7D%0Atable%20%7B%0Amargin%3A%201em%20auto%3B%0Aborder%2Dwidth%3A%201px%3B%0Aborder%2Dcolor%3A%20%23DDDDDD%3B%0Aborder%2Dstyle%3A%20outset%3B%0Aborder%2Dcollapse%3A%20collapse%3B%0A%7D%0Atable%20th%20%7B%0Aborder%2Dwidth%3A%202px%3B%0Apadding%3A%205px%3B%0Aborder%2Dstyle%3A%20inset%3B%0A%7D%0Atable%20td%20%7B%0Aborder%2Dwidth%3A%201px%3B%0Aborder%2Dstyle%3A%20inset%3B%0Aline%2Dheight%3A%2018px%3B%0Apadding%3A%205px%205px%3B%0A%7D%0Atable%2C%20table%20th%2C%20table%20td%20%7B%0Aborder%2Dleft%2Dstyle%3A%20none%3B%0Aborder%2Dright%2Dstyle%3A%20none%3B%0A%7D%0Atable%20thead%2C%20table%20tr%2Eeven%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0A%7D%0Ap%20%7B%0Amargin%3A%200%2E5em%200%3B%0A%7D%0Ablockquote%20%7B%0Abackground%2Dcolor%3A%20%23f6f6f6%3B%0Apadding%3A%200%2E25em%200%2E75em%3B%0A%7D%0Ahr%20%7B%0Aborder%2Dstyle%3A%20solid%3B%0Aborder%3A%20none%3B%0Aborder%2Dtop%3A%201px%20solid%20%23777%3B%0Amargin%3A%2028px%200%3B%0A%7D%0Adl%20%7B%0Amargin%2Dleft%3A%200%3B%0A%7D%0Adl%20dd%20%7B%0Amargin%2Dbottom%3A%2013px%3B%0Amargin%2Dleft%3A%2013px%3B%0A%7D%0Adl%20dt%20%7B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0Aul%20%7B%0Amargin%2Dtop%3A%200%3B%0A%7D%0Aul%20li%20%7B%0Alist%2Dstyle%3A%20circle%20outside%3B%0A%7D%0Aul%20ul%20%7B%0Amargin%2Dbottom%3A%200%3B%0A%7D%0Apre%2C%20code%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0Aborder%2Dradius%3A%203px%3B%0Acolor%3A%20%23333%3B%0Awhite%2Dspace%3A%20pre%2Dwrap%3B%20%0A%7D%0Apre%20%7B%0Aborder%2Dradius%3A%203px%3B%0Amargin%3A%205px%200px%2010px%200px%3B%0Apadding%3A%2010px%3B%0A%7D%0Apre%3Anot%28%5Bclass%5D%29%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0A%7D%0Acode%20%7B%0Afont%2Dfamily%3A%20Consolas%2C%20Monaco%2C%20%27Courier%20New%27%2C%20monospace%3B%0Afont%2Dsize%3A%2085%25%3B%0A%7D%0Ap%20%3E%20code%2C%20li%20%3E%20code%20%7B%0Apadding%3A%202px%200px%3B%0A%7D%0Adiv%2Efigure%20%7B%0Atext%2Dalign%3A%20center%3B%0A%7D%0Aimg%20%7B%0Abackground%2Dcolor%3A%20%23FFFFFF%3B%0Apadding%3A%202px%3B%0Aborder%3A%201px%20solid%20%23DDDDDD%3B%0Aborder%2Dradius%3A%203px%3B%0Aborder%3A%201px%20solid%20%23CCCCCC%3B%0Amargin%3A%200%205px%3B%0A%7D%0Ah1%20%7B%0Amargin%2Dtop%3A%200%3B%0Afont%2Dsize%3A%2035px%3B%0Aline%2Dheight%3A%2040px%3B%0A%7D%0Ah2%20%7B%0Aborder%2Dbottom%3A%204px%20solid%20%23f7f7f7%3B%0Apadding%2Dtop%3A%2010px%3B%0Apadding%2Dbottom%3A%202px%3B%0Afont%2Dsize%3A%20145%25%3B%0A%7D%0Ah3%20%7B%0Aborder%2Dbottom%3A%202px%20solid%20%23f7f7f7%3B%0Apadding%2Dtop%3A%2010px%3B%0Afont%2Dsize%3A%20120%25%3B%0A%7D%0Ah4%20%7B%0Aborder%2Dbottom%3A%201px%20solid%20%23f7f7f7%3B%0Amargin%2Dleft%3A%208px%3B%0Afont%2Dsize%3A%20105%25%3B%0A%7D%0Ah5%2C%20h6%20%7B%0Aborder%2Dbottom%3A%201px%20solid%20%23ccc%3B%0Afont%2Dsize%3A%20105%25%3B%0A%7D%0Aa%20%7B%0Acolor%3A%20%230033dd%3B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0Aa%3Ahover%20%7B%0Acolor%3A%20%236666ff%3B%20%7D%0Aa%3Avisited%20%7B%0Acolor%3A%20%23800080%3B%20%7D%0Aa%3Avisited%3Ahover%20%7B%0Acolor%3A%20%23BB00BB%3B%20%7D%0Aa%5Bhref%5E%3D%22http%3A%22%5D%20%7B%0Atext%2Ddecoration%3A%20underline%3B%20%7D%0Aa%5Bhref%5E%3D%22https%3A%22%5D%20%7B%0Atext%2Ddecoration%3A%20underline%3B%20%7D%0A%0Acode%20%3E%20span%2Ekw%20%7B%20color%3A%20%23555%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%0Acode%20%3E%20span%2Edt%20%7B%20color%3A%20%23902000%3B%20%7D%20%0Acode%20%3E%20span%2Edv%20%7B%20color%3A%20%2340a070%3B%20%7D%20%0Acode%20%3E%20span%2Ebn%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Efl%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Ech%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Est%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Eco%20%7B%20color%3A%20%23888888%3B%20font%2Dstyle%3A%20italic%3B%20%7D%20%0Acode%20%3E%20span%2Eot%20%7B%20color%3A%20%23007020%3B%20%7D%20%0Acode%20%3E%20span%2Eal%20%7B%20color%3A%20%23ff0000%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%0Acode%20%3E%20span%2Efu%20%7B%20color%3A%20%23900%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%20code%20%3E%20span%2Eer%20%7B%20color%3A%20%23a61717%3B%20background%2Dcolor%3A%20%23e3d2d2%3B%20%7D%20%0A" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Course Summary</h1>
+<h4 class="author"><em>Ziqiang Chen</em></h4>
+<h4 class="date"><em>October 21, 2016</em></h4>
+
+
+
+<div id="day-1-packages-and-version-control" class="section level2">
+<h2>Day 1: Packages and Version Control</h2>
+<p>We learned to create a package using <a href="https://cran.r-project.org/package=devtools">devtools</a>. The way to get started is to create a skeleton of a package.</p>
+<pre><code>library(devtools)
+create(&quot;Elbo&quot;)</code></pre>
+<p>This creates a directory with a couple files and a folder. We then did the following:</p>
+<ol style="list-style-type: decimal">
+<li>The DESCRIPTION contains info about the package; we edited it for our purpose.</li>
+<li>We looked at the NAMESPACE, but didn’t touch it.</li>
+<li>We created our first function in the R folder, <code>hi()</code>.</li>
+</ol>
+<p>We then used <a href="https://cran.r-project.org/package=roxygen2">roxygen2</a> to add documentation to the function, including inforamtion about parameters and return values. We also used tags (<code>@export</code>) to indicate that we want to ‘export’ the function from the namespace.</p>
+<p>We also learn to manage source code with <a href="https://github.com/">github</a>.</p>
+<p>Here’s the result of our work:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(Elbo)
+<span class="kw">hi</span>(<span class="st">&quot;Ziqiang&quot;</span>)</code></pre></div>
+<pre><code>## [1] &quot;hello ZIQIANG you have 7 letters in your name!&quot;</code></pre>
+</div>
+<div id="day-2-classic-rich-and-tidy-data" class="section level2">
+<h2>Day 2: Classic, Rich and Tidy data</h2>
+<p>‘Classic’ data is represented as a `data.frame()’ with sample as rows and feature as columns.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pdatafl =<span class="st"> &quot;C:/Users/ziqiangc/Dropbox/RDevWorkshop/Elbo/ALL-phenoData.csv&quot;</span>
+exprfl =<span class="st"> &quot;C:/Users/ziqiangc/Dropbox/RDevWorkshop/Elbo/ALL-expression.csv&quot;</span>
+classic &lt;-<span class="st"> </span><span class="kw">input_classic</span>(pdatafl, exprfl)
+classic[<span class="dv">1</span>:<span class="dv">5</span>,<span class="kw">c</span>(<span class="dv">1</span>:<span class="dv">3</span>, <span class="dv">22</span>:<span class="dv">24</span>)]</code></pre></div>
+<pre><code>##   Row.names  cod diagnosis date last seen  1000_at  1001_at
+## 1     01003 1003 2/18/1997      7/11/1997 7.240252 5.224752
+## 2     01005 1005 5/21/1997           &lt;NA&gt; 7.597323 5.046194
+## 3     01007 1007 9/30/1998           &lt;NA&gt; 7.676749 5.129002
+## 4     01010 1010 3/29/2000      8/28/2000 7.479445 4.932537
+## 5     02020 2020 3/23/2000           &lt;NA&gt; 7.934247 5.667907</code></pre>
+<p>One of the things we did was to plot the distribution of expression values across genes.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(<span class="kw">colMeans</span>(classic[, -(<span class="dv">1</span>:<span class="dv">22</span>)]))</code></pre></div>
+<p><img src="data:image/png;base64,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" alt /><!-- --></p>
+</div>
+
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
